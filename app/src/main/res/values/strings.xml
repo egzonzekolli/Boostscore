@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BoostScore</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_game_details">GameDetails</string>
+    <string name="token">3f6F8k8XUQMHw_XsC4tVooilxfz2IzJ4mO3hB1HPISKAivvSrn8</string>
+
+    <string name="BASE_URL_CSGO">https://api.pandascore.co/csgo/</string>
+    <string name="BASE_URL_DOTA2">https://api.pandascore.co/dota2/</string>
+    <string name="BASE_URL_LOL">https://api.pandascore.co/lol/</string>
+
+    <string name="BASE_URL_CSGO_RUNING">https://api.pandascore.co/csgo/</string>
+    <string name="BASE_URL_DOTA2_RUNING">https://api.pandascore.co/dota2/</string>
+    <string name="BASE_URL_LOL_RUNING">https://api.pandascore.co/lol/</string>
+
+    <string name="BASE_URL_CSGO_PAST">https://api.pandascore.co/csgo/</string>
+    <string name="BASE_URL_DOTA2_PAST">https://api.pandascore.co/dota2/</string>
+    <string name="BASE_URL_LOL_PAST">https://api.pandascore.co/lol/</string>
+    <string name="url">https://api.pandascore.co/csgo/</string>
+</resources>

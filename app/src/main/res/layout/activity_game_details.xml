@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.demotxt.droidsrce.profileui.MainActivity"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:background="@drawable/gradientbackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2">
+                    <androidx.cardview.widget.CardView
+                        android:visibility="visible"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginBottom="2dp"
+                        app:cardElevation="@dimen/cardview_default_radius"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+
+                            android:id="@+id/ImgTeam1"
+                            android:transitionName="img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            tools:ignore="UnusedAttribute" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/NameTeam1"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team1"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="21sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="VS"
+                        android:textSize="15sp"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2">
+                    <androidx.cardview.widget.CardView
+                        android:visibility="visible"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginBottom="2dp"
+                        app:cardElevation="@dimen/cardview_default_radius"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+
+                            android:id="@+id/ImgTeam2"
+                            android:transitionName="img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            tools:ignore="UnusedAttribute" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/NameTeam2"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team2"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="21sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="10"
+                        >
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="3"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            app:cardElevation="@dimen/cardview_default_radius"
+                            app:cardCornerRadius="10dp">
+                            <ImageView
+
+                                android:id="@+id/ImgTeam1Player1"
+                                android:transitionName="img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:ignore="UnusedAttribute" />
+
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/NameTeam1Player1"
+                            android:layout_weight="6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="10"
+                        >
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="3"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            app:cardElevation="@dimen/cardview_default_radius"
+                            app:cardCornerRadius="10dp">
+                            <ImageView
+
+                                android:id="@+id/ImgTeam1Player2"
+                                android:transitionName="img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:ignore="UnusedAttribute" />
+
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/NameTeam1Player2"
+                            android:layout_weight="6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="10"
+                        >
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="3"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            app:cardElevation="@dimen/cardview_default_radius"
+                            app:cardCornerRadius="10dp">
+                            <ImageView
+
+                                android:id="@+id/ImgTeam1Player3"
+                                android:transitionName="img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:ignore="UnusedAttribute" />
+
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/NameTeam1Player3"
+                            android:layout_weight="6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="10"
+                        >
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="3"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            app:cardElevation="@dimen/cardview_default_radius"
+                            app:cardCornerRadius="10dp">
+                            <ImageView
+
+                                android:id="@+id/ImgTeam1Player4"
+                                android:transitionName="img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:ignore="UnusedAttribute" />
+
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/NameTeam1Player4"
+                            android:layout_weight="6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="10"
+                        >
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="3"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            app:cardElevation="@dimen/cardview_default_radius"
+                            app:cardCornerRadius="10dp">
+                            <ImageView
+
+                                android:id="@+id/ImgTeam1Player5"
+                                android:transitionName="img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:ignore="UnusedAttribute" />
+
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/NameTeam1Player5"
+                            android:layout_weight="6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="10"
+                        >
+
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/NameTeam2Player1"
+                            android:layout_weight="6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="3"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            app:cardElevation="@dimen/cardview_default_radius"
+                            app:cardCornerRadius="10dp">
+                            <ImageView
+
+                                android:id="@+id/ImgTeam2Player1"
+                                android:transitionName="img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:ignore="UnusedAttribute" />
+
+                        </androidx.cardview.widget.CardView>
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="10"
+                        >
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/NameTeam2Player2"
+                            android:layout_weight="6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="3"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            app:cardElevation="@dimen/cardview_default_radius"
+                            app:cardCornerRadius="10dp">
+                            <ImageView
+
+                                android:id="@+id/ImgTeam2Player2"
+                                android:transitionName="img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:ignore="UnusedAttribute" />
+
+                        </androidx.cardview.widget.CardView>
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="10"
+                        >
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/NameTeam2Player3"
+                            android:layout_weight="6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="3"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            app:cardElevation="@dimen/cardview_default_radius"
+                            app:cardCornerRadius="10dp">
+                            <ImageView
+
+                                android:id="@+id/ImgTeam2Player3"
+                                android:transitionName="img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:ignore="UnusedAttribute" />
+
+                        </androidx.cardview.widget.CardView>
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="10"
+                        >
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/NameTeam2Player4"
+                            android:layout_weight="6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="3"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            app:cardElevation="@dimen/cardview_default_radius"
+                            app:cardCornerRadius="10dp">
+                            <ImageView
+
+                                android:id="@+id/ImgTeam2Player4"
+                                android:transitionName="img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:ignore="UnusedAttribute" />
+
+                        </androidx.cardview.widget.CardView>
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="10"
+                        >
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/NameTeam2Player5"
+                            android:layout_weight="6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="3"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            app:cardElevation="@dimen/cardview_default_radius"
+                            app:cardCornerRadius="10dp">
+                            <ImageView
+
+                                android:id="@+id/ImgTeam2Player5"
+                                android:transitionName="img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:ignore="UnusedAttribute" />
+
+                        </androidx.cardview.widget.CardView>
+                        <View
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
